@@ -1,0 +1,22 @@
+user: "throwaway51243@outlook.com"
+pass: "throw away51243"
+
+const transporter = nodemailer.createTransport({
+    service: "hotmail",
+    auth: {
+        // Email adress which will send the email
+        // ADD EMAIL ADDRESS
+        user: "throwaway51243@outlook.com",
+	// ADD PASSWORD
+        pass: "throw away51243"
+    }
+})
+
+const options = {
+        // ADD SENDER'S EMAIL ADDRESS
+        from: "throwaway51243@outlook.com",
+        // recipient contains reciver's email adress
+        to: recipient,
+        subject: "Amazon Price Update",
+        text: "Your requested item is " + result  + " " + url 
+}
